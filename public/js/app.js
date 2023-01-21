@@ -8,21 +8,21 @@ setTimeout(function(){
 
 
 //nav bar//
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+// const btn = document.querySelector("button.mobile-menu-button");
+// const menu = document.querySelector(".mobile-menu");
 
-btn.addEventListener("click", () => {
-  menu.classList.toggle("closed");
-  const currentState = btn.getAttribute("data-state");
+// btn.addEventListener("click", () => {
+//   menu.classList.toggle("closed");
+//   const currentState = btn.getAttribute("data-state");
 
-  if (!currentState || currentState === "closed") {
-    btn.setAttribute("data-state", "opened");
-    btn.setAttribute("aria-expanded", "true");
-  } else {
-    btn.setAttribute("data-state", "closed");
-    btn.setAttribute("aria-expanded", "false");
-  }
-});
+//   if (!currentState || currentState === "closed") {
+//     btn.setAttribute("data-state", "opened");
+//     btn.setAttribute("aria-expanded", "true");
+//   } else {
+//     btn.setAttribute("data-state", "closed");
+//     btn.setAttribute("aria-expanded", "false");
+//   }
+// });
 
 
 //add to cart tick//s
@@ -58,3 +58,6 @@ window.addEventListener('resize', slideImage);
 
 
 
+function myFunction(x) {
+  x.classList.toggle("change");
+}

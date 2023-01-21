@@ -27,286 +27,179 @@
 
 
   
-   <section > 
-         <!-- Navbar goes here    -->
-      <nav class="bg-white">
-        <div class="max-w-[95%]  mx-auto"> 
-          <div class="flex justify-between">
-            <div class="">
-               <!-- Website Logo    -->
-              <a href="/" class="flex items-start">
-                <img src="images/GT-logo-4.png" alt="Logo" class="w-36 " />
-              </a>
-            </div>
+  <section>
+    <nav class="bg-white border-gray-200 px-2 md:px-4 py-2.5 ">
+      <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
+          <a href="/" class="flex items-center">
+              <img src="/images/GT-logo-4.png" class="h-12 logo" alt=" Logo" />
 
-            <?php  $active_page=basename($_SERVER['PHP_SELF'], ".php");    ?>
-
-                <!-- <!-Secondary Navbar items      -->
-            <div class="hidden xl:flex  items-center space-x-4">
-              <a
-                href="/"
-                class=" text-2xl font-semi-bold text-blue-800  hover:text-[#FF52B4] btn1 btn-21 hover-slide-right <?php echo $active_page === 'index' ? 'border-b-4 border-[#FF52B4] text-[#FF52B4] ' : ''; ?>"><span>Home</span></a>
-                
-              
-              <a
-                href="/about"
-                class="  text-2xl font-semi-bold text-blue-800  hover:text-[#FF52B4]  btn1 btn-21 hover-slide-right  <?php echo $active_page === 'about' ? 'border-b-4 border-[#FF52B4] text-[#FF52B4]' : ''; ?>"><span>About</span></a>
-              
-
-              <a
-                href="/products"
-                class="  text-2xl font-semi-bold text-blue-800  hover:text-[#FF52B4]  btn1 btn-21 hover-slide-right  <?php echo $active_page === 'products' ? 'border-b-4 border-[#FF52B4] text-[#FF52B4]' : ''; ?>"><span>Products</span></a>
-                
-                {{-- dropdown --}}
-                
-                 <div class="navbar navbar-expand-lg bg-gray-50 relative flex items-center justify-between">
-                  <div class="">
-                    <button class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentX" aria-controls="navbarSupportedContentX" aria-expanded="false" aria-label="Toggle navigation">
-                      <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-                      </svg>
-                    </button>
-                    <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentX">
-                      <ul class="navbar-nav flex flex-row">
-                        <li class="nav-item dropdown static">
-                          <a class="block text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out dropdown-toggle flex items-center whitespace-nowrap" href="#"
-                           type="button" id="dropdownMenuButtonX" data-bs-toggle="dropdown"
-                          aria-expanded="false">Mega menu
-                            <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                              <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                            </svg>
-                          </a>
-                          <div class="dropdown-menu w-full mt-0 hidden shadow-lg bg-white absolute left-0 top-full" style="width: 650%; margin-top:20px;" aria-labelledby="dropdownMenuButtonX">
-                            <div class="">
-                              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-15">
-                                <div class="bg-white text-gray-600">
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Chakkra</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFctetur</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFg elit</a>
-                                </div>
-                                <div class="bg-white text-gray-600">
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFuptas</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFis quo</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFiores</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFdolor</a>
-                                </div>
-                                <div class="bg-white text-gray-600">
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFato</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFm</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                                </div>
-                                <div class="bg-white text-gray-600">
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFato</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFm</a>
-                                  <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                
-                {{-- dropdown --}}
-       
-
-              
-              <a
-                href="/contact-us"
-                class="  text-2xl font-semi-bold text-blue-800  hover:text-[#FF52B4]  btn1 btn-21 hover-slide-right  <?php echo $active_page === 'contact-us' ? 'border-b-4 border-[#FF52B4] text-[#FF52B4]' : ''; ?>"><span>Contact us</span></a>
-               
-         
-                
-              <div class="">
-                  <a href="/login" class="butn butn__new"><span><i class="fa fa-sign-in mr-2" style="font-size:20px"></i>Sign in</span></a>
-              </div>
-
-              <div class="">
-                  <a href="/sign-up" class="butn butn__new"><span><i class="fas fa-user pr-2" style="font-size:16px "></i>Sign Up</span></a> <span class=" border-r-2 pl-4 border-blue-900"></span>
-              </div>
-              
-
-              <a href="#" class="text-2xl font-semi-bold text-blue-900  hover:text-[#FF52B4] btn1 btn-21 hover-slide-right  <?php echo $active_page === '#' ? 'border-b-2 border-[#FF52B4] text-[#FF52B4]' : ''; ?> "><i class = "fas fa-shopping-cart"  style="font-size:24px;" ></i><span class="ml-2">cart</span>
-              </a> 
-            </div>
-
+          </a>
+          <div class="flex items-center md:order-2">
             
-
-              <!-- Mobile menu button -->
-         
-            <div class="flex  lg:hidden items-center">
-              <button
-                class="outline-0 mobile-menu-button button-one"
-                aria-controls=""
-                aria-expanded="false"
-                data-state="closed"
-              >
-                <svg
-                  fill=" var(--primary)"
-                  class="w-12 h-12 hamburger"
-                  viewBox="0 0 100 100"
-                  width="250"
-                >
-                  <rect
-                    class="line top"
-                    width="80"
-                    height="10"
-                    x="10"
-                    y="25"
-                    rx="5"
-                  ></rect>
-                  <rect
-                    class="line middle"
-                    width="80"
-                    height="10"
-                    x="10"
-                    y="45"
-                    rx="5"
-                  ></rect>
-                  <rect
-                    class="line bottom"
-                    width="80"
-                    height="10"
-                    x="10"
-                    y="65"
-                    rx="5"
-                  ></rect>
-                </svg>
+              <a href="/login" class="  bg bg__new w-28 h-10 text-center  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-md px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"style="background-image: linear-gradient(60deg,  #02306D, #FF52B4);">Login</a>
+              <a href="/sign-up" class="   bg bg__new w-28 h-10 text-center  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-md px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"style="background-image: linear-gradient(60deg,  #02306D, #FF52B4);">Sign up</a>
+              <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg  md:hidden " aria-expanded="false">
+                  <div class="container-2" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
               </button>
-            </div>
           </div>
-        </div>
-
-          <!-- mobile menu     -->
-
-        <?php  $active_page=basename($_SERVER['PHP_SELF'], ".php");    ?>
-
-        <div class="mobile-menu w-screen h-screen closed">
-          <ul class="w-full text-center">
-            <li class="active">
-              <a
-                href="/"
-                class="block text-sm px-2 py-2 text-[1.5rem] leading-[2.25rem] pt-[1rem] pb-[1rem] text-blue-900  <?php echo $active_page === 'index' ? 'bg-[#FF52B4] text-[white]' : ''; ?> "
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="/about"
-                class="block text-sm px-2 py-2  text-[1.5rem] leading-[2.25rem] pt-[1rem] pb-[1rem] text-blue-900  <?php echo $active_page === 'about' ? 'bg-[#FF52B4] text-[white]' : ''; ?> "
-                >About us</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="/products"
-                class="block text-sm px-2 py-2 text-[1.5rem] leading-[2.25rem] pt-[1rem] pb-[1rem]  text-blue-900  <?php echo $active_page === 'products' ? 'bg-[#FF52B4] text-[white]' : ''; ?> "
-                >Products</a
-              >
-            </li>
-
-            <!-- mega menu -->
-            <div class=" navbar-expand-lg bg-gray-50 relative flex items-center justify-between">
-              <div class="">
-         
-                <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentX">
-                  <ul class="navbar-nav flex flex-row">
-                    <li class="nav-item dropdown static">
-                      <a class="block text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out dropdown-toggle flex items-center whitespace-nowrap" href="#"
-                       type="button" id="dropdownMenuButtonX" data-bs-toggle="dropdown"
-                      aria-expanded="false">Mega menu
-                        <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                          <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
-                        </svg>
-                      </a>
-                      <div class="dropdown-menu w-full mt-0 hidden shadow-lg bg-white absolute left-0 top-full" style="width: 650%; margin-top:20px;" aria-labelledby="dropdownMenuButtonX">
-                        <div class="">
-                          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-15">
-                            <div class="bg-white text-gray-600">
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Chakkra</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFctetur</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFg elit</a>
-                            </div>
-                            <div class="bg-white text-gray-600">
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFuptas</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFis quo</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFiores</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFdolor</a>
-                            </div>
-                            <div class="bg-white text-gray-600">
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFato</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFm</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                            </div>
-                            <div class="bg-white text-gray-600">
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFato</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF odio</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDFm</a>
-                              <a href="#!" aria-current="true" class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">AASDF</a>
-                            </div>
+    
+          <div id="mega-menu" class="text-center  justify-between hidden w-full text-lg md:flex md:w-auto md:order-1 ">
+              <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                  <li>
+                      <a href="/" class="block text-1xl lg:text-2xl block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  " aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about" class="block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  ">About</a>
+                  </li>
+                  <li>
+                    <a href="/products" class="block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  ">Products</a>
+                  </li>
+                  <li>
+                      <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class=" drow-1  flex items-center justify-between text-1xl block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  ">
+                          More Products<svg aria-hidden="true" class="w-5 h-5 ml-1 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      </button>
+                      <div id="mega-menu-dropdown" class="absolute z-10 grid hidden  grid-cols-2 text-1xl bg-white  rounded-lg shadow-md dark:border-gray-700 md:grid-cols-2 lg:grid-cols-4 dark:bg-gray-700" >
+                          <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                              <ul class="space-y-4 " aria-labelledby="mega-menu-dropdown-button">
+                                  <li>
+                                      <a href="/products1" class="text-blue-900 text-1xl  hover:text-[#FF52B4]">
+                                        <h2 class="text-2xl ">Flower Pots</h2>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Flower Pots Big 
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Flower Pots Small  
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Flower Pots Special
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Super Deluxe (5 Pcs)
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Colour Koti Red&green(5 Pcs)
+                                      </a>
+                                  </li>
+                              </ul>
                           </div>
-                        </div>
+                          <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                              <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                  <li>
+                                      <a href="#" class="text-blue-900 text-1xl hover:text-[#FF52B4]">
+                                        <h2 class="text-2xl "> Kids crackers </h2>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Magic Pops
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Ultra Candle 
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Zee Boom Baa
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        4 '' Twinkling Star 
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        1 1/2 Twinkling Star 
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                              <ul class="space-y-4">
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        <h2 class="text-2xl "> Sound Crackers </h2>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        ds Bomb
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900   text-1 0  hover:text-[#FF52B4]">
+                                        Auto  Bomb
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Hydro Bomb
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Classic bomb
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                        Digital Bomb
+                                      </a>
+                                  </li>
+                                
+                              </ul>
+                          </div>
+                          <div class="p-4 text-gray-900 dark:text-white">
+                              <ul class="space-y-4">
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                          Contact Us
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                          Support Center
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" class="text-blue-900  text-1x   hover:text-[#FF52B4]">
+                                          Terms
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
                       </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> 
-        
-            <!-- mega menu -->
-
-            <li>
-              <a
-                href="/gallery"
-                class="block text-sm px-2 py-2  text-[1.5rem] leading-[2.25rem] pt-[1rem] pb-[1rem] text-blue-900  <?php echo $active_page === 'gallery' ? 'bg-[#FF52B4]  text-[white]' : ''; ?> "
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a
-                href="/contact-us"
-                class="block text-sm px-2 py-2  text-[1.5rem] leading-[2.25rem] pt-[1rem] pb-[1rem] text-blue-900  <?php echo $active_page === 'contact-us' ? 'bg-[#FF52B4] text-[white]' : ''; ?> "
-                >Contact-us</a
-              >
-            </li>
-            <li>
-            <div class="banner">
-                  <a href="/login" class='butn butn__new'><span><i class="fas fa-user pr-2" style="font-size:16px "></i>Sign in</span></a>
-              </div>
-            </li>
-
-            <li>
-            <div class="banner">
-                  <a href="/sign-up" class='butn butn__new mt-4'><span><i class="fa fa-sign-in mr-2" style="font-size:20px ">           </i>Sign             Up</span></a>
-              </div>
-            </li>
-
-           <li class="mt-6" >
-           <a href="#" class="py-4 px-2  text-2xl font-semi-bold text-blue-900 hover:text-[#FF52B4]  "><i class = "fas fa-shopping-cart"  style="font-size:36px;" ></i>
-            </a>
-           </li>
-         
-          </ul>
-        </div>
-      </nav>
-   
-   </section>   
+                  </li>
+                  <li>
+                      <a href="/gallery" class="block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  ">Gallery</a>
+                  </li>
+                  <li>
+                      <a href="/contact-us" class="block text-1xl lg:text-2xl text-blue-800  hover:text-[#FF52B4] py-2  ">Contact us</a>
+                  </li>
+               
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  </section>
    
 
  

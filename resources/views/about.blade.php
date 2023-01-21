@@ -40,7 +40,7 @@
     <img src="images/r-l.png" alt="" width="150">
   </div>
   <div class="text-center -my-40">
-   <h1 class="text-5xl xl:text-7xl tracking-wider text-white font-extrabold h-56 bg-[#281a3bcf] pt-20">All Fancy Crackers & Gift Box Available</h1>
+   <h1 class="text-5xl xl:text-7xl tracking-wider text-white font-extrabold h-56 lg:h-40 bg-[#281a3bcf] pt-20">All Fancy Crackers & Gift Box Available</h1>
    </div>
   </div>
 </section>
@@ -54,7 +54,7 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_2pr9x3si.json"  background="transparent"  speed="1"  style="width: 250px; height: 250px;"  loop autoplay></lottie-player>
   </div>  -->
-      <div class="sticky lg:top-32 lg:mx-[50rem] ">
+  <div class="sticky mt-40 lg:top-32 md:mx-[50rem]">
         <img src="images/hap Diwali.png" alt="" height="300" class="" />
       </div>
       <div class="">
@@ -125,7 +125,6 @@
 
 
 @include('partials/footer')
-<script src="js/index.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
-</html>
+
+ 
+

@@ -118,3 +118,13 @@
         </div>
       </div>
 </footer> 
+
+
+
+<script src="js/flowbite.js"></script>
+<script src="js/index.min.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

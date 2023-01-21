@@ -3,7 +3,7 @@
 
 <div class="firework1"></div>
 
-<section class="mt-10 mb-20 ">
+<section class="mt-10  ">
     <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <div class="absolute lg:mx-[39rem] -mt-32">
       <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_yuhagrws.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>

@@ -53,8 +53,8 @@
   <div class="text-center mt-32 max-w-[100%] mx-auto">
     <h1 class="text-white font-extrabold text-5xl md:text-6xl lg:text-7xl tracking-wider sm:w-full h-28 pt-6  sm">New Launches</h1>
   </div>
-  <div class="max-w-[85%] mx-auto">
-    <div class="flex flex-wrap   gap-x-6">
+  <div class="max-w-[95%] mx-auto">
+    <div class="flex flex-wrap  gap-x-6">
       <div class="relative group w-96 h-96 overflow-hidden  m-auto mt-10 container" id="blur" >
           <img class="object-cover w-full h-full transform duration-700 " src="images/s3.png" />
           <div class="absolute w-full h-full transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
@@ -313,9 +313,5 @@
 
 
 @include('partials/footer')
-  <script src="js/index.min.js"></script>
-  <script src="js/app.js"></script>
-  
 
-</body>
-</html>
+
