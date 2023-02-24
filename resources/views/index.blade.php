@@ -1,7 +1,7 @@
 
   @include('partials/nav')
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+
 
      <!-- gallary -->
    <section>
@@ -41,7 +41,7 @@
         </a>
     </div>
    </section>
-    
+
 
    <section id="NEW Launches">
     <div class="flex justify-end mb-[-20rem]">
@@ -49,12 +49,13 @@
     </div>
     <div class="mb-[-22rem]">
 <lottie-player src="/lottie/fire-animation.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-    </div> 
+    </div>
   <div class="text-center mt-32 max-w-[100%] mx-auto">
     <h1 class="text-white font-extrabold text-5xl md:text-6xl lg:text-7xl tracking-wider sm:w-full h-28 pt-6  sm">New Launches</h1>
   </div>
-  <div class="max-w-[95%] mx-auto">
-    <div class="flex flex-wrap  gap-x-6">
+  <div class="max-w-[94
+  %] mx-auto">
+    <div class="flex flex-wrap gap-x-6">
       <div class="relative group w-96 h-96 overflow-hidden  m-auto mt-10 container" id="blur" >
           <img class="object-cover w-full h-full transform duration-700 " src="images/s3.png" />
           <div class="absolute w-full h-full transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
@@ -118,7 +119,7 @@
             alt=""
           />
         </div>
-        
+
         <div class="carousel-item  float-left w-full">
           <img
             src="images/Products Will (2).png"
@@ -144,7 +145,7 @@
     </div>
     <div class="mb-[-22rem]">
 <lottie-player src="/lottie/fire-animation.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-    </div> 
+    </div>
   <section class="mt-24" >
     <div class="text-center max-w-[100%] mx-auto  ">
       <h1 class="text-white font-extrabold text-5xl md:text-6xl lg:text-7xl tracking-wider  h-30 md:h-28 pt-6 sm">Featured Products</h1>
@@ -176,7 +177,7 @@
                 </div>
               </div>
             </div>
-  
+
           </div>
 
           <div class="grid-item">
@@ -205,7 +206,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="grid-item">
             <div class="mt-10 lg:mt-0 rounded-lg shadow-lg bg-white max-w-sm hover:scale-110 transition duration-500 ease-in-out ">
               <a href="#!">
@@ -232,7 +233,7 @@
               </div>
             </div>
           </div>
-    
+
           <div class="grid-item">
             <div class="mt-10 lg:mt-0 rounded-lg shadow-lg bg-white max-w-sm  hover:scale-110 transition duration-500 ease-in-out">
               <a href="#!">
@@ -283,7 +284,7 @@
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/social-1-svg1.svg" alt="instagram">
                     </div>
                 </div>
-                <div class="relative group"> 
+                <div class="relative group">
                     <img src="images/p7.jpg" alt="" class="lg:block hidden w-full h-full" />
                     <img src="images/p7.jpg" alt="" class="lg:hidden block w-full" />
                     <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
@@ -308,7 +309,7 @@
                     </div>
                 </div>
             </div>
-</div>   
+</div>
 </section>
 
 

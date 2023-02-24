@@ -66,7 +66,7 @@ body{
 
 }
 
-   
+
 
 /* .button-one .line {
   transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
@@ -218,7 +218,7 @@ transition: 0.5s;
   #popup {
    width: 315px;
   }
-  
+
 }
 
 #popup.active{
@@ -308,13 +308,13 @@ z-index: 1;
 
 .sm {
   background-image: linear-gradient(-225deg, #02306D 0%, #FF52B4 100%);
-  
+
 }
 
 
 
 .bg{
- 
+
   padding: 0rem 2.5rem;
   color: #fff;
   position: relative;
@@ -764,19 +764,19 @@ z-index: 1;
   transform: translate(-50%, var(--y));
   width: var(--initialSize);
   aspect-ratio: 1;
-  background: 
+  background:
     /*
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
     */
-    
+
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
     radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
-    
+
     /* bottom right */
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
@@ -784,7 +784,7 @@ z-index: 1;
     radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
-    
+
     /* bottom left */
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
@@ -793,7 +793,7 @@ z-index: 1;
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
-    
+
     /* top left */
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
@@ -802,7 +802,7 @@ z-index: 1;
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
-    
+
     /* top right */
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
@@ -846,7 +846,7 @@ z-index: 1;
   --color3: fuchsia;
   --color4: orchid;
   --color5: plum;
-  --color6: lavender;  
+  --color6: lavender;
   --finalSize: 40vmin;
   left: 30%;
   top: 60%;
@@ -915,19 +915,19 @@ z-index: 1;
   transform: translate(-50%, var(--y));
   width: var(--initialSize);
   aspect-ratio: 1;
-  background: 
+  background:
     /*
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
     */
-    
+
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
     radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
-    
+
     /* bottom right */
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
@@ -935,7 +935,7 @@ z-index: 1;
     radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
-    
+
     /* bottom left */
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
@@ -944,7 +944,7 @@ z-index: 1;
     radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
-    
+
     /* top left */
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
@@ -953,7 +953,7 @@ z-index: 1;
     radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
     radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
     radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
-    
+
     /* top right */
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
@@ -994,7 +994,7 @@ z-index: 1;
     height: 4rem !important;
   }
 }
-  
+
 
 .container-2 {
   display: inline-block;
@@ -1025,5 +1025,106 @@ z-index: 1;
     margin-left: 7.5rem;
   }
 }
+
+
+
+.violet{
+    background-color: #63459B;
+    height: 80px;
+}
+
+@media screen and (max-width: 500px){
+    .fss-4{
+        font-size: .75rem !important;
+    }
+  }
+
+@media screen and (max-width: 500px){
+    .fss-5{
+        font-size: .75rem !important;
+    }
+  }
+
+@media screen and (max-width: 500px){
+    .hh4{
+        font-size: .86rem !important;
+    }
+  }
+
+@media screen and (max-width: 500px){
+    .hh5{
+        font-size: .86rem !important;
+    }
+  }
+
+
+.container-fact {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar-1{
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(0, 11px) rotate(-90deg);
+
+    transition: 0.4s;
+  }
+  .bar-2{
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+     margin: 9px 0px;
+    transition: 0.4s;
+
+  }
+
+
+  .change .bar-1 {
+    transform: translate(0, 11px) rotate(-0deg);
+  }
+
+  .change .bar-2 {opacity: 0;}
+
+
+.yellow{
+    background-color: #ffd8f4 ;
+    height: 80px;
+    color: #63459B ;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.minimum_order_amount_cover {
+    color: red;
+    font-weight: bold;
+}
+
+.Order {
+    position: sticky;
+    top: -1px;
+    background-color:#281a3bcf ;
+    font-size: 24px;
+    height: 80px;
+    z-index: 1;
+}
+
+.strike {
+    text-decoration-color: #ff0000 !important;
+    text-decoration-thickness: 2px !important;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:760px)
+{
+  .wrapper{
+    flex-direction: column;
+
+  }
+}
+
 
 

@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route; 
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,5 +55,9 @@ Route::get('/products3', function () {
 
 Route::get('/products4', function () {
     return view('products4');
+});
+
+Route::get('/Order-List', function () {
+    return view('Order-List');
 });
 
